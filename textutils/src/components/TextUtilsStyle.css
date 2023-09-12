@@ -1,0 +1,73 @@
+.card {
+
+    /* width: 300px; */
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+ 
+
+.toggle-input {
+
+    display: none;
+
+}
+
+ 
+
+.card-header {
+
+    /* background-color: #f7f7f7; */
+    background-color: white;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: block;
+
+}
+
+ 
+
+.card-content {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    /* transition: max-height 0.2s ease-out; */
+
+    padding: 0 15px;
+
+}
+
+ 
+
+.toggle-input:checked + .card-header + .card-content {
+
+    max-height: 100vh;  /* This can be adjusted based on your needs. */
+
+    padding: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
